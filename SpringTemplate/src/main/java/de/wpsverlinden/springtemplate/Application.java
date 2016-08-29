@@ -1,4 +1,4 @@
-package de.wpsverlinden.springtest;
+package de.wpsverlinden.springtemplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

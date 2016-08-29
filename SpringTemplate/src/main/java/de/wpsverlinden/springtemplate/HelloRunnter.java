@@ -1,4 +1,4 @@
-package de.wpsverlinden.springtest;
+package de.wpsverlinden.springtemplate;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
