@@ -17,7 +17,10 @@ public class HelloRunner implements CommandLineRunner {
     
     @Override
     public void run(String... strings) throws Exception {
-        LOG.log(Level.INFO, "Running application");
+        LOG.log(Level.INFO, getMessage());
     }
-    
+
+    String getMessage() {
+         return "Hello application";
+    }
 }
