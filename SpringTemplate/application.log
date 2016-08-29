@@ -1,0 +1,9 @@
+10:10:17.399 [restartedMain] INFO  d.w.springtest.Application - Starting Application on NDE70189 with PID 6748 (C:\Users\overlinden\Documents\NetBeansProjects\SpringTemplate\SpringTemplate\target\classes started by OVerlinden in C:\Users\overlinden\Documents\NetBeansProjects\SpringTemplate\SpringTemplate)
+10:10:17.403 [restartedMain] INFO  d.w.springtest.Application - No active profile set, falling back to default profiles: default
+10:10:17.453 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78fffbb0: startup date [Mon Aug 29 10:10:17 CEST 2016]; root of context hierarchy
+10:10:18.621 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:10:18.661 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:10:18.676 [restartedMain] INFO  d.w.springtest.HelloRunnter - Running application
+10:10:18.679 [restartedMain] INFO  d.w.springtest.Application - Started Application in 1.675 seconds (JVM running for 2.066)
+10:10:18.682 [Thread-7] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@78fffbb0: startup date [Mon Aug 29 10:10:17 CEST 2016]; root of context hierarchy
+10:10:18.685 [Thread-7] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
