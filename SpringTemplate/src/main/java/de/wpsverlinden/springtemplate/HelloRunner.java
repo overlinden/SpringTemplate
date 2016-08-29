@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class HelloRunnter implements CommandLineRunner {
+public class HelloRunner implements CommandLineRunner {
 
-    private static final Logger LOG = Logger.getLogger(HelloRunnter.class.getName());
+    private static final Logger LOG = Logger.getLogger(HelloRunner.class.getName());
     
     @Override
     public void run(String... strings) throws Exception {
