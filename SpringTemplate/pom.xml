@@ -82,12 +82,14 @@
                 <executions>
                     <execution>
                         <goals>
+                            <goal>repackage</goal>
                             <goal>build-info</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
                     <fork>true</fork>
+                    <executable>true</executable>
                     <additionalProperties>
                         <encoding.source>${project.build.sourceEncoding}</encoding.source>
                         <java.source>${maven.compiler.source}</java.source>
