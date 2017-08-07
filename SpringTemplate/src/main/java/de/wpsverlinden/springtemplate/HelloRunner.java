@@ -1,7 +1,7 @@
 package de.wpsverlinden.springtemplate;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,11 +13,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloRunner implements CommandLineRunner {
 
-    private static final Logger LOG = Logger.getLogger(HelloRunner.class.getName());
+    @Autowired
+    private Logger LOG;
     
     @Override
     public void run(String... strings) throws Exception {
-        LOG.log(Level.INFO, getMessage());
+        LOG.info(getMessage());
     }
 
     String getMessage() {
