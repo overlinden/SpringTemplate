@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.*;
+import org.slf4j.Logger;
 
 /**
  *
@@ -14,14 +15,14 @@ import static org.assertj.core.api.Assertions.*;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {HelloRunner.class, LoggerConfiguration.class})
-public class HelloRunnerTest {
+@SpringBootTest(classes = LoggerConfiguration.class)
+public class LoggerConfigurationTest {
     
     @Autowired
-    private HelloRunner helloRunner;
+    private Logger LOG;
     
     @Test
-    public void testOutput() {
-        assertThat(helloRunner.getMessage()).isEqualTo("Hello application");
+    public void testLoggerInjection() {
+        assertThat(LOG.getName()).isEqualTo(this.getClass().getName());
     }
 }

@@ -21,7 +21,7 @@ public class HelloRunner implements CommandLineRunner {
         LOG.info(getMessage());
     }
 
-    String getMessage() {
+    public String getMessage() {
          return "Hello application";
     }
 }
