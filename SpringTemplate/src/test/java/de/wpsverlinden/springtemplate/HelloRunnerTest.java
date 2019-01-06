@@ -2,11 +2,13 @@ package de.wpsverlinden.springtemplate;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.*;
+import org.mockito.InjectMocks;
+import org.slf4j.Logger;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 /**
  *
@@ -14,10 +16,13 @@ import static org.assertj.core.api.Assertions.*;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {HelloRunner.class, LoggerConfiguration.class})
+@SpringBootTest(classes = {HelloRunner.class})
 public class HelloRunnerTest {
     
-    @Autowired
+    @MockBean
+    private Logger LOG;
+    
+    @InjectMocks
     private HelloRunner helloRunner;
     
     @Test
